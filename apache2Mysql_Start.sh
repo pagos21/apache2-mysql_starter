@@ -2,6 +2,7 @@
 
 echo -e "\n###APACHE2 & MYSQL starter###\n"
 
+
 sudo systemctl start apache2.service mysql.service
 if [ $? -eq 0 ]; then
   echo "OK"
@@ -26,3 +27,5 @@ if [ $? -eq 0 ]; then
 else
   echo -e "\nErrore nell'esecuzione dello script! \n==> Controlla che tutti i servizi siano configurati correttamente.\nModifica questo script se il problema persiste...."
 fi
+
+$SHELL
